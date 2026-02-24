@@ -212,6 +212,14 @@ body {
   margin-bottom: 1.25em;
 }
 
+.post-content video {
+  max-height: 400px;
+  border-radius: 12px;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1.25em;
+}
+
 .post-content a {
   color: #0a0a0a;
   text-decoration: underline;
