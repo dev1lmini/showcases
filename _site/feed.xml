@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Notebook</title>
-    <description>A Swiss minimal notebook</description>
+    <title>Markiian Linynskyy — Design Engineer Showcase</title>
+    <description>A showcase of my work as a design engineer</description>
     <link>/blog/</link>
     <atom:link href="/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    
+
     <item>
       <title>Building for the Modern Web</title>
       <description>A look at how the web platform has evolved and what it means for developers building today.</description>
@@ -13,6 +13,6 @@
       <link>/blog/modern-web/</link>
       <guid isPermaLink="true">/blog/modern-web/</guid>
     </item>
-    
+
   </channel>
 </rss>
