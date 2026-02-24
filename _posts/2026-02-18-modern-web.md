@@ -13,14 +13,14 @@ As the Founding Design Engineer for Diny, I owned the product experience from a 
 
 Below is a deep dive into the core experiences I designed and built.
 
-<video src="demos/full-experience.mp4" autoplay loop muted></video>
+<video src="demos/full-experience.mp4" autoplay loop muted playsinline webkit-playsinline></video>
 <p class="video-caption">Full Diny product experience demo.</p>
 
 ---
 
 ## 1. The Search Experience: Fluidity Meets Performance
 
-<video src="demos/search.mp4" autoplay loop muted></video>
+<video src="demos/search.mp4" autoplay loop muted playsinline webkit-playsinline></video>
 <p class="video-caption">Search experience: fluid discovery and transitions.</p>
 
 The search interface is the front door to Diny, designed to give users all necessary information at a glance (prep time, distance, available services, and cuisine type) without overwhelming them.
@@ -34,7 +34,7 @@ The search interface is the front door to Diny, designed to give users all neces
 
 ## 2. Restaurant View: Edge-to-Edge Immersion
 
-<video src="demos/place.mp4" autoplay loop muted></video>
+<video src="demos/place.mp4" autoplay loop muted playsinline webkit-playsinline></video>
 <p class="video-caption">Restaurant detail view with edge-to-edge immersion.</p>
 
 Navigating from the search screen to the restaurant details feels less like a page load and more like a camera zooming into the venue.
@@ -47,11 +47,11 @@ Navigating from the search screen to the restaurant details feels less like a pa
 
 ## 3. Synchronized Menu Navigation
 
-<video src="demos/sections.mov" autoplay loop muted></video>
+<video src="demos/sections.mov" autoplay loop muted playsinline webkit-playsinline></video>
 <p class="video-caption">Menu sections synchronized with scrolling.</p>
-<video src="demos/sections2.mov" autoplay loop muted></video>
+<video src="demos/sections2.mov" autoplay loop muted playsinline webkit-playsinline></video>
 <p class="video-caption">Alternate view of synchronized sections.</p>
-<video src="demos/section3.mp4" autoplay loop muted></video>
+<video src="demos/section3.mp4" autoplay loop muted playsinline webkit-playsinline></video>
 <p class="video-caption">Deep dive into multi-directional navigation.</p>
 
 Menu navigation is historically clunky in the food delivery industry. I engineered a multi-directional navigation system that feels magical and requires zero cognitive load.
@@ -64,9 +64,9 @@ Menu navigation is historically clunky in the food delivery industry. I engineer
 
 ## 4. Frictionless Selection
 
-<video src="demos/menu.mov" autoplay loop muted></video>
+<video src="demos/menu.mov" autoplay loop muted playsinline webkit-playsinline></video>
 <p class="video-caption">Menu interaction focused on ultra-fast selection.</p>
-<video src="demos/order2.mov" autoplay loop muted></video>
+<video src="demos/order2.mov" autoplay loop muted playsinline webkit-playsinline></video>
 <p class="video-caption">Selection and order state in motion.</p>
 
 In Diny, we believe software should give you your time back. The checkout flow starts with a radical approach to item selection: it takes only one tap.
@@ -79,9 +79,9 @@ In Diny, we believe software should give you your time back. The checkout flow s
 
 ## 5. Contextual Checkout Flow
 
-<video src="demos/order.mp4"  autoplay loop muted></video>
+<video src="demos/order.mp4"  autoplay loop muted playsinline webkit-playsinline></video>
 <p class="video-caption">Order creation process from cart to confirmation.</p>
-<video src="demos/order3.mov" autoplay loop muted></video>
+<video src="demos/order3.mov" autoplay loop muted playsinline webkit-playsinline></video>
 <p class="video-caption">Order type selection and contextual options.</p>
 
 The checkout process was designed to never interrupt the user's context. Instead of bouncing the user to a new page, checkout happens in a highly polished bottom sheet.
@@ -95,7 +95,7 @@ The checkout process was designed to never interrupt the user's context. Instead
 
 ## 6. Eatfeed: Immersive Discovery
 
-<video src="demos/eatfeed.mp4" autoplay loop muted></video>
+<video src="demos/eatfeed.mp4" autoplay loop muted playsinline webkit-playsinline></video>
 <p class="video-caption">Eatfeed: swipe-based, immersive food discovery.</p>
 
 Borrowing high-engagement paradigms from social media, I introduced a swipe-based food selection experience to the dining industry.
