@@ -142,62 +142,6 @@ body {
   padding: 2rem 1.5rem 4rem;
 }
 
-/* ---- Home / Listing ---- */
-.listing__title {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 2.5rem;
-}
-
-.listing__item + .listing__item {
-  border-top: 1px solid #ddd;
-}
-
-.listing__link {
-  display: block;
-  padding: 1.5rem 0;
-  text-decoration: none;
-  color: inherit;
-}
-
-.listing__image {
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  border: 1px solid #ddd;
-  margin-bottom: 1rem;
-}
-
-.listing__date {
-  display: block;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.75rem;
-  letter-spacing: 0.05em;
-  color: #888;
-  margin-bottom: 0.25rem;
-}
-
-.listing__item-title {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -0.01em;
-  margin-bottom: 0.25rem;
-}
-
-.listing__link:hover .listing__item-title {
-  text-decoration: underline;
-}
-
-.listing__desc {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.5;
-}
-
 /* ---- Post ---- */
 .post-header {
   margin-bottom: 2.5rem;
