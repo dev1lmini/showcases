@@ -305,4 +305,8 @@ body {
   .post-header__title {
     font-size: 2rem;
   }
+  .post-content video {
+    width: 100%;
+    max-width: 100%;
+  }
 }
