@@ -3,25 +3,25 @@ layout: default
 title: "Notebook"
 description: "A Swiss minimal notebook"
 ---
+{% assign post = site.posts.first %}
 <main class="site-main">
-  <h1 class="listing__title">Posts</h1>
-  <ul class="listing">
-    {% assign sorted_posts = site.posts | sort: "date" | reverse %}
-    {% for post in sorted_posts %}
-    <li class="listing__item">
-      <a href="{{ post.url | relative_url }}" class="listing__link">
-        <img
-          src="{{ post.image }}"
-          alt="{{ post.title }}"
-          class="listing__image"
-        />
-        <time class="listing__date" datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%b %-d, %Y" }}
-        </time>
-        <h2 class="listing__item-title">{{ post.title }}</h2>
-        <p class="listing__desc">{{ post.description }}</p>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+  <article>
+    <header class="post-header">
+      <time class="post-header__date" datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%B %-d, %Y" }}
+      </time>
+      <h1 class="post-header__title">{{ post.title }}</h1>
+      <p class="post-header__desc">{{ post.description }}</p>
+    </header>
+
+    {% if post.image %}
+    <div class="post-hero">
+      <img src="{{ post.image }}" alt="{{ post.title }}" />
+    </div>
+    {% endif %}
+
+    <div class="post-content">
+      {{ post.content }}
+    </div>
+  </article>
 </main>
