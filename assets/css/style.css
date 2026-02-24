@@ -306,7 +306,7 @@ body {
     font-size: 2rem;
   }
   .post-content video {
+    max-height: none;
     width: 100%;
-    max-width: 100%;
   }
 }
