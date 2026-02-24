@@ -8,13 +8,13 @@ As the Founding Design Engineer for Diny, I owned the product experience from a 
 
 Below is a deep dive into the core experiences I designed and built.
 
-<video src="demos/full-experience.mp4" controls width="640" autoplay loop muted></video>
+<video src="demos/full-experience.mp4" autoplay loop muted></video>
 
 ---
 
 ## 1. The Search Experience: Fluidity Meets Performance
 
-<video src="demos/search.mp4" controls width="640" autoplay loop muted></video>
+<video src="demos/search.mp4" autoplay loop muted></video>
 
 The search interface is the front door to Diny, designed to give users all necessary information at a glance (prep time, distance, available services, and cuisine type) without overwhelming them.
 
@@ -27,7 +27,7 @@ The search interface is the front door to Diny, designed to give users all neces
 
 ## 2. Restaurant View: Edge-to-Edge Immersion
 
-<video src="demos/place.mp4" controls width="640" autoplay loop muted></video>
+<video src="demos/place.mp4" autoplay loop muted></video>
 
 Navigating from the search screen to the restaurant details feels less like a page load and more like a camera zooming into the venue.
 
@@ -39,9 +39,9 @@ Navigating from the search screen to the restaurant details feels less like a pa
 
 ## 3. Synchronized Menu Navigation
 
-<video src="demos/sections.mov" controls width="640" autoplay loop muted></video>
-<video src="demos/sections2.mov" controls width="640" autoplay loop muted></video>
-<video src="demos/section3.mp4" controls width="640" autoplay loop muted></video>
+<video src="demos/sections.mov" autoplay loop muted></video>
+<video src="demos/sections2.mov" autoplay loop muted></video>
+<video src="demos/section3.mp4" autoplay loop muted></video>
 
 Menu navigation is historically clunky in the food delivery industry. I engineered a multi-directional navigation system that feels magical and requires zero cognitive load.
 
@@ -53,12 +53,12 @@ Menu navigation is historically clunky in the food delivery industry. I engineer
 
 ## 4. Frictionless Selection
 
-<video src="demos/menu.mov" controls width="640" autoplay loop muted></video>
-<video src="demos/order2.mov" controls width="640" autoplay loop muted></video>
+<video src="demos/menu.mov" autoplay loop muted></video>
+<video src="demos/order2.mov" autoplay loop muted></video>
 
 In Diny, we believe software should give you your time back. The checkout flow starts with a radical approach to item selection: it takes only one tap.
 
-- **Fluid Quantity Controls:** Adding an item immediately triggers a fluid animation that expands the component to reveal quantity controls (+ / -).
+- **Fluid Quantity Controls:** Adding an item immediately triggers a fluid animation that expands the component to reveal quantity (+ / -).
 - **Instant Discovery:** Multiple item variants are easily discoverable and viewable without drilling down into new screens, accelerating the decision-making process.
 - **Engineering Resilience:** To prevent API overloads from rapid tapping, I engineered a resilient queuing behavior. Loaders are elegantly embedded directly into the action buttons (plus/minus) to provide instant feedback while safely handling backend requests. This complex animation state was thoroughly optimized to play nicely with list virtualization.
 
@@ -66,8 +66,8 @@ In Diny, we believe software should give you your time back. The checkout flow s
 
 ## 5. Contextual Checkout Flow
 
-<video src="demos/order.mp4"  controls width="640" autoplay loop muted></video>
-<video src="demos/order3.mov" controls width="640" autoplay loop muted></video>
+<video src="demos/order.mp4"  autoplay loop muted></video>
+<video src="demos/order3.mov" autoplay loop muted></video>
 
 The checkout process was designed to never interrupt the user's context. Instead of bouncing the user to a new page, checkout happens in a highly polished bottom sheet.
 
@@ -80,7 +80,7 @@ The checkout process was designed to never interrupt the user's context. Instead
 
 ## 6. Eatfeed: Immersive Discovery
 
-<video src="demos/eatfeed.mp4" controls width="640" autoplay loop muted></video>
+<video src="demos/eatfeed.mp4" autoplay loop muted></video>
 
 Borrowing high-engagement paradigms from social media, I introduced a swipe-based food selection experience to the dining industry.
 
