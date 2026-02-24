@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <hr />
+  <div class="site-footer__inner">
+    <span class="site-footer__copy">&copy; {{ 'now' | date: "%Y" }} {{ site.author }}</span>
+    <div class="site-footer__links">
+      <a href="mailto:{{ site.email }}">Mail</a>
+      <a href="https://github.com/{{ site.github }}">GitHub</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </div>
+  </div>
+</footer>

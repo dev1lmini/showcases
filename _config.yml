@@ -1,0 +1,23 @@
+title: "Notebook"
+description: "A Swiss minimal notebook"
+author: "Alex Morgan"
+email: "hello@alexmorgan.io"
+github: "alexmorgan"
+
+url: ""
+baseurl: "/"
+
+permalink: /:slug/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

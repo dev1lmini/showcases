@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A look at how the web platform has evolved and what it means for developers building today." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/blog/assets/css/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Notebook" href="/blog/feed.xml" />
+    <title>Building for the Modern Web</title>
+  </head>
+  <body>
+    <header class="site-header">
+  <div class="site-header__inner">
+    <a href="/blog/" class="site-header__brand">Alex Morgan</a>
+    <nav class="site-header__nav">
+      <a href="mailto:hello@alexmorgan.io">Mail</a>
+      <a href="https://github.com/alexmorgan">GitHub</a>
+    </nav>
+  </div>
+  <hr />
+</header>
+
+    <main class="site-main">
+  <article>
+    <header class="post-header">
+      <time class="post-header__date" datetime="2026-02-18T00:00:00+00:00">
+        February 18, 2026
+      </time>
+      <h1 class="post-header__title">Building for the Modern Web</h1>
+      <p class="post-header__desc">A look at how the web platform has evolved and what it means for developers building today.</p>
+    </header>
+
+    
+    <div class="post-hero">
+      <img src="https://picsum.photos/seed/webdev/1200/800" alt="Building for the Modern Web" />
+    </div>
+    
+
+    <div class="post-content">
+      <p>The web has changed. Not in the dramatic, revolutionary way that makes headlines, but in the quiet accumulation of capabilities that have made it a genuinely powerful platform for building software.</p>
+
+<p><img src="https://picsum.photos/seed/code-screen/1200/700" alt="Code on a screen" /></p>
+
+<h2 id="the-platform-grows-up">The Platform Grows Up</h2>
+
+<p>Five years ago, building a performant, accessible website meant fighting the platform at every turn. Today, HTML, CSS, and JavaScript offer native solutions for problems that once required heavy libraries.</p>
+
+<p>Container queries let components respond to their own size rather than the viewport. The <code class="language-plaintext highlighter-rouge">dialog</code> element handles modals with built-in accessibility. CSS nesting reduces the need for preprocessors. View transitions bring native page animations.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.card-container</span> <span class="p">{</span>
+  <span class="nl">container-type</span><span class="p">:</span> <span class="nb">inline-size</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.card</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">grid</span><span class="p">;</span>
+  <span class="nl">gap</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
+
+  <span class="err">@container</span> <span class="err">(</span><span class="nl">min-width</span><span class="p">:</span> <span class="m">400px</span><span class="p">)</span> <span class="err">{</span>
+    <span class="n">grid-template-columns</span><span class="p">:</span> <span class="m">200px</span> <span class="m">1fr</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="err">}</span>
+</code></pre></div></div>
+
+<h2 id="islands-and-partial-hydration">Islands and Partial Hydration</h2>
+
+<p>The most significant architectural shift has been the move toward partial hydration. Frameworks like Astro pioneered the idea that most of a page doesn’t need JavaScript, and only interactive “islands” should ship client-side code.</p>
+
+<p>This isn’t just a performance optimization — it’s a philosophical shift. It acknowledges that the web is fundamentally a document platform that sometimes needs application-like behavior, not the other way around.</p>
+
+<p><img src="https://picsum.photos/seed/architecture/1200/600" alt="Architecture diagram" /></p>
+
+<h2 id="content-first-development">Content-First Development</h2>
+
+<p>Static site generators have evolved into full content platforms. Content collections provide type-safe schemas for markdown. MDX blends prose with components. Build-time rendering means pages load instantly.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">collection</span> <span class="o">=</span> <span class="nf">defineCollection</span><span class="p">({</span>
+  <span class="na">schema</span><span class="p">:</span> <span class="nx">z</span><span class="p">.</span><span class="nf">object</span><span class="p">({</span>
+    <span class="na">title</span><span class="p">:</span> <span class="nx">z</span><span class="p">.</span><span class="nf">string</span><span class="p">(),</span>
+    <span class="na">date</span><span class="p">:</span> <span class="nx">z</span><span class="p">.</span><span class="nx">coerce</span><span class="p">.</span><span class="nf">date</span><span class="p">(),</span>
+    <span class="na">draft</span><span class="p">:</span> <span class="nx">z</span><span class="p">.</span><span class="nf">boolean</span><span class="p">().</span><span class="k">default</span><span class="p">(</span><span class="kc">false</span><span class="p">),</span>
+  <span class="p">}),</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>The developer experience has improved dramatically. Hot module replacement is instant. Type errors surface in the editor, not in production. Deployment is a git push.</p>
+
+<h2 id="what-matters-now">What Matters Now</h2>
+
+<p>Performance budgets. Accessibility audits. Progressive enhancement. These aren’t new ideas, but they’ve moved from best practices to baseline expectations. The tools have caught up with the ideals.</p>
+
+<p><img src="https://picsum.photos/seed/clean-desk/1200/800" alt="Laptop on a clean desk" /></p>
+
+<p>The modern web rewards simplicity. Ship less JavaScript. Use semantic HTML. Let CSS do the heavy lifting. Trust the platform.</p>
+
+<p>The best websites in 2026 don’t feel like technological achievements. They feel like well-designed spaces where content breathes and readers feel welcome.</p>
+
+    </div>
+  </article>
+</main>
+
+    <footer class="site-footer">
+  <hr />
+  <div class="site-footer__inner">
+    <span class="site-footer__copy">&copy; 2026 Alex Morgan</span>
+    <div class="site-footer__links">
+      <a href="mailto:hello@alexmorgan.io">Mail</a>
+      <a href="https://github.com/alexmorgan">GitHub</a>
+      <a href="/blog/feed.xml">RSS</a>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
