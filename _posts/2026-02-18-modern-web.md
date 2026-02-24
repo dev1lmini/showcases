@@ -44,9 +44,11 @@ Navigating from the search screen to the restaurant details feels less like a pa
 
 ## 3. Synchronized Menu Navigation
 
+<div class="video-grid">
 <video src="demos/sections.mov" autoplay loop muted></video>
 <video src="demos/sections2.mov" autoplay loop muted></video>
 <video src="demos/section3.mp4" autoplay loop muted></video>
+</div>
 
 Menu navigation is historically clunky in the food delivery industry. I engineered a multi-directional navigation system that feels magical and requires zero cognitive load.
 
@@ -58,8 +60,10 @@ Menu navigation is historically clunky in the food delivery industry. I engineer
 
 ## 4. Frictionless Selection
 
+<div class="video-grid">
 <video src="demos/menu.mov" autoplay loop muted></video>
 <video src="demos/order2.mov" autoplay loop muted></video>
+</div>
 
 In Diny, we believe software should give you your time back. The checkout flow starts with a radical approach to item selection: it takes only one tap.
 
@@ -71,8 +75,10 @@ In Diny, we believe software should give you your time back. The checkout flow s
 
 ## 5. Contextual Checkout Flow
 
+<div class="video-grid">
 <video src="demos/order.mp4"  autoplay loop muted></video>
 <video src="demos/order3.mov" autoplay loop muted></video>
+</div>
 
 The checkout process was designed to never interrupt the user's context. Instead of bouncing the user to a new page, checkout happens in a highly polished bottom sheet.
 
