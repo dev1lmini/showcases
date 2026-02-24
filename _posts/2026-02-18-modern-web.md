@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "esign Engineer Showcase: Diny"
+title: "Design Engineer Showcase: Diny"
 description: "As the Founding Design Engineer for Diny, I owned the product experience from a blank canvas to a fully deployed production environment."
 date: 2026-02-18
 tags: [web, development, technology, design]
