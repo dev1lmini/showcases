@@ -225,28 +225,13 @@ body {
   margin: 0.5em auto 1.25em;
 }
 
-.post-content .video-grid {
-  column-count: 1;
-  column-gap: 1.5rem;
-}
-
-.post-content .video-grid video {
-  width: 100%;
-  max-width: 100%;
-  display: block;
-  break-inside: avoid;
-}
-
-@media (min-width: 768px) {
-  .post-content .video-grid {
-    column-count: 2;
-  }
-}
-
-@media (min-width: 1024px) {
-  .post-content .video-grid {
-    column-count: 3;
-  }
+.post-content .video-caption {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  color: #777;
+  text-align: center;
+  margin-top: -0.25em;
+  margin-bottom: 1.75em;
 }
 
 .post-content a {
